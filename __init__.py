@@ -6,8 +6,8 @@ from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
 app = Flask(__name__)
-csrf = CSRFProtect()
-csrf.init_app(app)
+#csrf = CSRFProtect()
+#csrf.init_app(app)
               
 @app.route("/contact/")
 def MaPremiereAPI():
