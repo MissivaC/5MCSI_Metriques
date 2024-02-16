@@ -5,8 +5,11 @@ from datetime import datetime
 from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
-app = Flask(__name__)                                                                                                                  
+app = Flask(__name__)
+csrf = CSRFProtect()
+csrf.init_app(ap
 @app.route("/contact/")
+              
 def MaPremiereAPI():
      return render_template("contact.html")
   
