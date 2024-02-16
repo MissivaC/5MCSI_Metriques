@@ -7,9 +7,9 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)
 csrf = CSRFProtect()
-csrf.init_app(ap
-@app.route("/contact/")
+csrf.init_app(app)
               
+@app.route("/contact/")
 def MaPremiereAPI():
      return render_template("contact.html")
   
